@@ -1,0 +1,38 @@
+html * {
+    font-family: Arial;
+}
+
+canvas {
+    border: 2px solid black;
+  }
+
+  main {
+    display: flex; 
+    justify-content: center; 
+    padding-top: 4rem;
+  }
+
+  .help {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+      display: flex;
+      align-items: flex-end;
+  }
+
+  .help img {
+      opacity: 0.6;
+      user-select: none;
+  }
+
+  .help img:hover {
+    opacity: 1;
+}
+
+.help .helptext {
+    visibility: hidden;
+    margin-right: 0.2rem;
+    margin-bottom: 20px;
+    padding: 1rem;
+    border: 2px solid black;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="../p5.min.js"></script>
+    <script src="./sketch.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="help">
+      <div class="helptext" id="helptext">
+        <p>
+          Click to add anchor
+        </p>
+        <p>
+          Double click to reset
+        </p>
+      </div>
+      <img src="./question-circle-regular.svg" width="20px" height="20px" id="helpicon" />
+    </div>
+    <main>
+    </main>
+    <script>
+      const helpTextEl = document.querySelector("#helptext");
+      document.querySelector("#helpicon").addEventListener("mouseout", () => (helpTextEl.style.visibility = "hidden"));
+      document.querySelector("#helpicon").addEventListener("mouseover", () => (helpTextEl.style.visibility = "visible"));
+    </script>
+  </body>
+</html>
